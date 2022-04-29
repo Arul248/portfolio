@@ -1,0 +1,473 @@
+html {
+  width: 100vh;
+}
+/* size lg / laptop-L */
+@media screen and (max-width: 1024px) {
+  /* home section */
+  .container-home {
+    width: 100%;
+    display: grid;
+    grid-template: 50% 50%;
+    grid-gap: 30px;
+  }
+  main .konten {
+    line-height: 50px;
+  }
+  .konten h1 {
+    font-size: 38px;
+  }
+  .konten .develop {
+    font-size: 15px;
+    margin-top: 0;
+    letter-spacing: 10px;
+  }
+  /* project section */
+  .container-project {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+  .heading-project {
+    font-size: 40px;
+  }
+  .project-section {
+    position: absolute;
+    top: 0;
+    padding: 150px 20px;
+  }
+
+  /* about section */
+  nav .link-group .link {
+    margin: 20px 60px;
+    font-size: 20px;
+  }
+  .about {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-gap: 40px;
+  }
+  .about-info {
+    color: #fff;
+    position: relative;
+    font-size: 17px;
+    line-height: 25px;
+    text-align: justify;
+    opacity: 0.6;
+    top: 10px;
+  }
+  .download-cv {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 8px 12px;
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    font-size: 13px;
+    cursor: pointer;
+  }
+
+  /* section skill */
+  .heading-skill {
+    font-size: 50px;
+  }
+  .skill-img {
+    height: 195px;
+  }
+  .skill-level {
+    width: 140px;
+    height: 140px;
+    border: 10px solid #000;
+    font-size: 25px;
+  }
+  .skill-name {
+    font-size: 25px;
+  }
+  .skill-info {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+/* size md / tablet  */
+@media screen and (max-width: 768px) {
+  /* home section */
+  .container-home {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 50px;
+  }
+  main {
+    display: flex;
+    align-items: center;
+  }
+  main .konten {
+    color: #fff;
+    text-align: left;
+    line-height: 40px;
+  }
+  .konten h1 {
+    font-size: 25px;
+  }
+  .konten .develop {
+    font-size: 12px;
+    margin-top: 0;
+    letter-spacing: 8px;
+  }
+  aside img {
+    width: 100%;
+    height: 100vh;
+    margin: 20px 0;
+    border-radius: 10px;
+    object-position: center;
+    object-fit: cover;
+  }
+  /* project  section */
+  ul.link-group a {
+    font-size: 18px;
+    margin: 0 20px;
+  }
+
+  .project-section {
+    position: absolute;
+    top: 0;
+    padding: 150px 50px;
+  }
+  .heading-project {
+    font-size: 30px;
+  }
+  .container-project {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-gap: 70px;
+  }
+  .project-card {
+    position: relative;
+    height: 390px;
+  }
+  .project-content {
+    position: relative;
+    margin-top: 10px;
+  }
+  .project-info {
+    font-size: 25px;
+  }
+  .btn-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+  }
+
+  /* about section */
+  nav .link-group .link {
+    margin: 20px 40px;
+    font-size: 18px;
+  }
+  .about-section {
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 150px 50px;
+    opacity: 1;
+  }
+  .about {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 30px;
+  }
+
+  /* skill */
+
+  .skill-section {
+    position: relative;
+    margin: 80px 50px;
+  }
+  .skill-container {
+    width: 95%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 100px;
+    color: #fff;
+  }
+  .skill-card {
+    position: relative;
+  }
+}
+
+/* size 663px */
+@media screen and (max-width: 663px) {
+  /* home section */
+  .home-section {
+    padding: 0 20px;
+  }
+  .container-home {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-gap: 30px;
+  }
+  main {
+    display: flex;
+    align-items: center;
+  }
+  main .konten {
+    color: #fff;
+    text-align: left;
+    line-height: 40px;
+  }
+  .konten h1 {
+    font-size: 22px;
+  }
+  .konten .develop {
+    font-size: 10px;
+    margin-top: 0;
+    letter-spacing: 7px;
+  }
+  /* project section */
+  ul.link-group a {
+    font-size: 18px;
+    margin: 0 8px;
+  }
+  .heading-project {
+    font-size: 25px;
+    line-height: 60px;
+  }
+  .project-section {
+    top: 100%;
+    padding: 150px 50px;
+  }
+  .project-card {
+    height: 350px;
+  }
+  .btn-project {
+    height: 37px;
+    width: 30%;
+  }
+  .github,
+  .live {
+    font-size: 17px;
+  }
+  /* about section */
+  nav .link-group .link {
+    font-size: 16px;
+  }
+  .about-section {
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 90px 50px;
+    /* opacity: 0; */
+  }
+  .about {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 55% 45%;
+    grid-gap: 20px;
+  }
+  .about-info {
+    position: relative;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: justify;
+    opacity: 0.6;
+    top: 10px;
+  }
+  .download-cv {
+    position: relative;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    z-index: 9;
+  }
+}
+
+/* size mobile L 500px */
+@media screen and (max-width: 500px) {
+  /* navbar */
+  nav .link-group .link {
+    margin: 20px 20px;
+    font-size: 20px;
+    position: relative;
+  }
+
+  /* home section */
+  .home-section {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    padding: 0 20px;
+    top: 0;
+    left: 0;
+  }
+  .container-home {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 2;
+    grid-gap: 10px;
+  }
+  main .konten {
+    text-align: center;
+    margin: 80px auto;
+  }
+  .konten h1 {
+    font-size: 35px;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+  .konten .develop {
+    margin-top: 5px;
+    font-size: 15px;
+    text-align: center;
+  }
+  aside img {
+    margin: 5px auto;
+  }
+  /* project section */
+  .container-project {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 50px;
+  }
+  ul.link-group a {
+    font-size: 16px;
+    margin: 0 5px;
+  }
+  .heading-project {
+    font-size: 22px;
+    line-height: 50px;
+  }
+
+  .project-section {
+    position: absolute;
+    top: -10%;
+    padding: 150px 30px;
+  }
+  .project-card {
+    height: 300px;
+  }
+  .project-content {
+    top: 50px;
+  }
+  .project-tittle {
+    font-size: 30px;
+  }
+  .project-info {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .btn-project {
+    height: 35px;
+    width: 90%;
+  }
+  .github,
+  .live {
+    font-size: 12px;
+  }
+
+  /* about section */
+  .about-section {
+    width: 95%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 100px 0;
+    /* opacity: 0; */
+  }
+  .about {
+    padding: 0 30px;
+    position: relative;
+    left: 2%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 2;
+    grid-gap: 40px;
+  }
+  nav .link-group .link {
+    margin: 20px 28px;
+    font-size: 17px;
+  }
+  .download-cv {
+    z-index: 8;
+  }
+  /* skill */
+  .skill-container {
+    width: 100%;
+    height: 90vh;
+    margin: 5px auto;
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-gap: 100px;
+    color: #fff;
+  }
+}
+
+/* size 381px / handphone potret */
+@media screen and (max-width: 381px) {
+  /* home section */
+  main .konten {
+    margin-top: 120px;
+  }
+  .konten h1 {
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+  nav .link-group .link {
+    margin: 15px 15px;
+    font-size: 12px;
+  }
+  /* [project section */
+  .container-project {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 50px;
+  }
+  ul.link-group a {
+    font-size: 16px;
+    margin: 0 5px;
+  }
+  .heading-project {
+    font-size: 19px;
+    line-height: 40px;
+  }
+
+  .project-section {
+    top: 63%;
+    padding: 150px 10px;
+  }
+  .project-card {
+    height: 300px;
+  }
+  .project-content {
+    top: 50px;
+  }
+
+  /* about section */
+  nav .link-group .link {
+    margin: 20px 23px;
+    font-size: 14px;
+  }
+  .download-cv {
+    z-index: 8;
+  }
+}
