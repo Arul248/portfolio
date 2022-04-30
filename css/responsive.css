@@ -73,6 +73,7 @@ html {
   /* section skill */
   .heading-skill {
     font-size: 50px;
+    margin-bottom: 20px;
   }
   .skill-img {
     height: 195px;
@@ -89,6 +90,19 @@ html {
   .skill-info {
     font-size: 14px;
     line-height: 18px;
+  }
+
+  /* timeline */
+  .card:nth-child(even)::before {
+    left: -16%;
+  }
+  .card:nth-child(odd)::before {
+    right: -16%;
+  }
+
+  /* kont ak*/
+  .kontak-section {
+    padding: 100px 90px;
   }
 }
 
@@ -200,6 +214,30 @@ html {
   .skill-card {
     position: relative;
   }
+
+  /* timeline */
+  .heading-timeline {
+    font-size: 40px;
+    margin-bottom: 100px;
+  }
+  .timeline {
+    width: 85%;
+    margin: 100px auto;
+  }
+  .card:nth-child(even)::before {
+    left: -16.7%;
+  }
+  .card:nth-child(odd)::before {
+    right: -17%;
+  }
+
+  /* kont ak*/
+  ul.link-group a {
+    margin: 0 10px;
+  }
+  .kontak-section {
+    padding: 100px 40px;
+  }
 }
 
 /* size 663px */
@@ -293,6 +331,26 @@ html {
     font-size: 14px;
     cursor: pointer;
     z-index: 9;
+  }
+  /* skill */
+
+  /* timeline */
+  .heading-timeline {
+    font-size: 35px;
+  }
+  .card:nth-child(even)::before {
+    left: -18%;
+  }
+  .card:nth-child(odd)::before {
+    right: -19%;
+  }
+
+  /* kont ak*/
+  ul.link-group a {
+    margin: 0 8px;
+  }
+  .kontak-section {
+    padding: 100px 30px;
   }
 }
 
@@ -418,6 +476,66 @@ html {
     grid-gap: 100px;
     color: #fff;
   }
+  /* timeline */
+  .timeline {
+    position: relative;
+    top: 650px;
+    left: 12px;
+    margin: 100px auto;
+    width: 100%;
+  }
+  .heading-timeline {
+    font-size: 27px;
+    margin-bottom: 10px;
+  }
+  .card {
+    width: 70%;
+    padding: 20px;
+    color: #fff;
+    border-radius: 10px;
+    display: block;
+    margin: 60px auto;
+    position: relative;
+  }
+  .card:nth-child(even)::before,
+  .card:nth-child(even)::after {
+    display: none;
+  }
+  .card:nth-child(even) .card-body::before {
+    display: none;
+  }
+  .card:nth-child(odd)::before {
+    content: "";
+    position: absolute;
+    top: -30%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .card:nth-child(odd)::after {
+    content: "";
+    position: absolute;
+    top: -68px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 50%;
+    background: #fff;
+    z-index: -1;
+  }
+  /* kontak */
+  .kontak-section {
+    padding: 100px 50px;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+  }
+  .form-submit {
+    margin-top: -15px;
+  }
+  div.map {
+    height: 100vh;
+  }
 }
 
 /* size 381px / handphone potret */
@@ -452,7 +570,7 @@ html {
   }
 
   .project-section {
-    top: 63%;
+    top: -12%;
     padding: 150px 10px;
   }
   .project-card {
@@ -469,5 +587,37 @@ html {
   }
   .download-cv {
     z-index: 8;
+  }
+
+  /* timeline */
+  ul.link-group a {
+    margin: 0 1px;
+    font-size: 14px;
+  }
+  .timeline {
+    position: relative;
+    top: 700px;
+    left: 12px;
+    margin: 100px auto;
+    width: 100%;
+  }
+  .heading-timeline {
+    font-size: 24px;
+    margin-bottom: -15px;
+  }
+  .card {
+    width: 90%;
+  }
+
+  /* kontak */
+  .kontak-section {
+    padding: 100px 30px;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+  }
+  div.map {
+    height: 70vh%;
   }
 }

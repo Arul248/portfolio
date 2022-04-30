@@ -253,6 +253,7 @@ aside img {
   text-align: center;
   font-size: 60px;
   font-weight: 600;
+  margin-bottom: 50px;
 }
 .skill-container {
   width: 100%;
@@ -313,4 +314,161 @@ aside img {
   opacity: 0.5;
   font-size: 16px;
   line-height: 20px;
+}
+
+/* timeline */
+.timeline {
+  display: block;
+  width: 80%;
+  margin: 150px auto;
+}
+.heading-timeline {
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 150px;
+}
+.card {
+  width: 45%;
+  padding: 30px;
+  color: #fff;
+  border-radius: 10px;
+  display: block;
+  background: aqua;
+  margin: -50px 0;
+  position: relative;
+}
+.card:nth-child(even) {
+  margin-left: auto;
+}
+.card:nth-child(even)::before {
+  content: "";
+  position: absolute;
+  left: -15%;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  border: 5px solid #191919;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+.card:nth-child(even)::after {
+  content: "";
+  position: absolute;
+  left: -8.5%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 7%;
+  height: 2px;
+  background: #fff;
+  z-index: -1;
+}
+.card:nth-child(odd)::before {
+  content: "";
+  position: absolute;
+  right: -14.5%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 5px solid #191919;
+  background: #191919;
+}
+.card:nth-child(odd)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -8.5%;
+  width: 7%;
+  height: 2px;
+  background: #fff;
+  z-index: -1;
+}
+.card:nth-child(2),
+.card:nth-child(2)::before {
+  background: #ff4f4f;
+}
+.card:nth-child(3),
+.card:nth-child(3)::before {
+  background: #52ff4f;
+}
+.card:nth-child(4),
+.card:nth-child(4)::before {
+  background: #4fa0ff;
+}
+.card:nth-child(5),
+.card:nth-child(5)::before {
+  background: #a0920e;
+}
+
+.card:nth-child(even) .card-body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -11.5%;
+  width: 0;
+  height: 100%;
+  border: 1px dashed #fff;
+  z-index: -1;
+}
+.card-tittle {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+/* kontak */
+.kontak-section {
+  position: absolute;
+  top: 0;
+  padding: 100px 150px;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+}
+.kontak-form input,
+.kontak-form textarea {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 30px;
+  background: rgba(225, 225, 225, 0.2);
+  border: 1px solid white;
+  color: #fff;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+::placeholder {
+  color: #fff;
+  text-transform: capitalize;
+}
+#msg {
+  height: 280px;
+  resize: none;
+  font-family: sans-serif;
+}
+.map {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 8px;
+  background: rgba(225, 225, 225, 0.2);
+}
+.map iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+.form-submit {
+  background: aqua;
+  padding: 15px 40px;
+  border-radius: 5px;
+  color: #fff;
+  display: block;
+  border: none;
+  margin: auto;
+  cursor: pointer;
 }
